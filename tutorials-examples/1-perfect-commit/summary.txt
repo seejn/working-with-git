@@ -18,4 +18,39 @@ Reasoning:
 - Enables more straightforward identification of the effects of changes on the overall project.
 
 
+Commit Message Guidelines:
+
+1. Be Descriptive: Provide a clear and concise description of the changes introduced by the commit. Use imperative mood (e.g., "Add feature" instead of "Added feature").
+
+2. Keep It Short: Limit the subject line to around 50 characters. This ensures that the message is visible in most Git tools and provides a quick overview.
+
+3. Provide Context: If necessary, add a more detailed explanation in the body of the commit message. Describe why the change is needed and any relevant background information.
+
+4. Use Present Tense: Write commit messages in the present tense to indicate what the commit does when applied.
+
+5. Separate Subject and Body: If the commit requires a detailed explanation, separate the subject line from the body with a blank line.
+
+6. Reference Issues: If the commit addresses a specific issue or task, reference it in the commit message. Include issue numbers prefixed with a hashtag (e.g., "Fix #123: Issue description").
+
+7. Follow Conventional Commit Format (Optional): Consider following the conventional commit format for consistency and automatic generation of release notes. It typically consists of a type, scope, and subject (e.g., "feat(users): Add login functionality").
+
+Example:
+
+feat: Add new user authentication feature
+
+Implemented user registration functionality
+Added login and logout endpoints
+Integrated authentication middleware for secure access
+
+
+Commit Types in Code Format:
+feat: New feature
+fix: Bug fix
+docs: Documentation changes
+style: Code style/formatting changes
+refactor: Code refactoring
+test: Adding or modifying tests
+chore: Maintenance tasks, build changes, etc.
+
+clear commit messages greatly assist in understanding the project's history, aiding collaboration, debugging, and tracking changes effectively.
 

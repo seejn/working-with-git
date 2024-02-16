@@ -1,0 +1,8 @@
+
+Conclusions:
+- Total number of people: 3
+- Average age: 31.00 years
+- Oldest person:
+  Name: Michael Johnson
+  Age: 35
+  Occupation: Project Manager

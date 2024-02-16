@@ -1,0 +1,21 @@
+Project: Task Workflow
+
+Tasks:
+1) Data Gathering
+2) Processing
+3) Conclusion
+
+Commit Strategy:
+- Separate each task into individual commits for better tracking and clarity.
+  1. First commit for data gathering.
+  2. Second commit for processing.
+  3. Third commit for conclusion.
+
+Reasoning:
+- Enhances traceability and accountability for each task.
+- Facilitates easier review and debugging by isolating changes to specific components.
+- Allows for easier collaboration, as team members can focus on specific areas.
+- Enables more straightforward identification of the effects of changes on the overall project.
+
+
+

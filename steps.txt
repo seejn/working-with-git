@@ -1,3 +1,48 @@
 1) perfect commit 
 	a. add right changes!
 	b. compose a good commit message!
+
+2) Branching Strategies [ Git allows to create branches - but it doesnot tell how to use them ]
+	a) Wriiten Convention
+		- Write best practice of how work is ideally structured in team - to avoid mistakes and collisions
+		- Highly depends on team/team size, on project working, and how releases are handled.
+		- Helps to onboard new team members (' this is how we work here ')
+	
+	b) Integrating Changes and Structuring Changes
+		- Mainline Development (' Always Be Integrating ')
+			# few branches
+			# relatively small commits
+			# high quality testing and QA standards
+		- State, Release, Feature Branches
+			# different types of branches fulfill different types of jobs
+		
+	c) Long and Short Running Branches
+		- Long Running Branches
+			# exist through the complete lifetime of the project
+			# often, they mirror 'stages' in development life cycle
+			# common convention: no direct commits!
+			
+		- Short Lived Branches
+			# for new features, bug fixes, refactorings, experiments
+			# will be deleted after integration (merge/rebase)
+			
+	d) Github Flow
+		- only one long-running branch ('main') + feature branches
+		
+		
+		Visual Representation:
+		
+								[ short lived branch ]
+					  feature1 branch - feature 1 bug fix branch  			
+					/											\[ merge ]                         
+		main-branch --------------------------------------------- main branch [ long running branch ] -- main-branch
+					\																	                / [ merge ]
+					  feature2 branch ------------------------------------------------- feature2 branch 
+					  				 \												  /	[ merge ]
+					  				  state 1 branch - state 2 branch - bug fix branch			
+					  				  				[ short lived branch ]
+	
+	e) GitFlow
+		- more structure, more rules
+		- long-running: "main" + "develop"
+		- short-lived: features, releases, hotfixes
